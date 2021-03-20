@@ -26,6 +26,13 @@ register(
     # More arguments here
 )
 
+# F1 Continuous Control
+register(
+    id='GazeboF1CameraEnvContinuous-v0',
+    entry_point='gym_gazebo.envs.f1.GazeboF1CameraEnvContinuous',
+    # More arguments here
+)
+
 # Turtlebot envs
 register(
     id='GazeboMazeTurtlebotLidar-v0',

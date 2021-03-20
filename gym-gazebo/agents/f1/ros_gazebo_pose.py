@@ -21,8 +21,8 @@ def main():
         set_state = rospy.ServiceProxy('/gazebo/set_model_state', SetModelState)
         resp = set_state( state_msg )
 
-    except rospy.ServiceException, e:
-        print "Service call failed: %s" % e
+    except rospy.ServiceException as  e:
+        print ("Service call failed:", e)
 
 if __name__ == '__main__':
     try:
